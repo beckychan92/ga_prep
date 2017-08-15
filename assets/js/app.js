@@ -48,7 +48,7 @@ app.setWebsite = function setWebsite() {
   var link = document.createElement('a');//create link
   link.setAttribute('href', website);//set href
   console.log(link);
-  link.innerHTML = website;//set text to be seen
+  link.innerHTML = "find out here!";//set text to be seen
   document.body.appendChild(link);//add to body
 
 
