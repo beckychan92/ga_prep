@@ -1,6 +1,8 @@
 // message in the console
 console.log("Hi there, welcome to the JavaScript console!");
 
+
+
 // initialize the application
 var app = new Object();
 console.log("becky chan")
@@ -33,20 +35,27 @@ app.setWebsite = function setWebsite() {
   var httpStatus = website.slice(0, 7);
   var http = "http://"
   httpStatus !== "http://" ? website = http.concat(website) : website;
-  console.log(website)
+  // console.log(website)
   //check if end of input includes ".com"
   var comStatus = website.slice(-4, website[length -1]);
   var com = ".com";
   comStatus !== ".com" ? website = website.concat(com) : website;
   //site ready for use 
-  console.log(website)
+  console.log(website + "good")
 
 
+  //help from Stack Overflow
+  var link = document.createElement('a');//create link
+  link.setAttribute('href', website);//set href
+  console.log(link);
+  link.innerHTML = website;//set text to be seen
+  document.body.appendChild(link);//add to body
 
 
-  <a href=website>Lets go there!</a>
+} 
 
-} // <-- code ABOVE this line for challenge #3 & bonus
+
+// <-- code ABOVE this line for challenge #3 & bonus
 
 
 
